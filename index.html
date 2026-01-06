@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Student Session</title>
+  <title>Teacher Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
   <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <h2>Student Session</h2>
-  <video id="video" autoplay playsinline></video>
-  <canvas id="overlay"></canvas>
-  <script type="module" src="facemesh.js"></script>
-
+  <h2>Live Student Monitor</h2>
+  <div id="statusBox" class="status focused">
+    <span id="statusText">Waiting for student…</span>
+  </div>
+  <canvas id="timeline" width="600" height="120"></canvas>
+  <script src="dashboard.js"></script>
 </body>
 </html>

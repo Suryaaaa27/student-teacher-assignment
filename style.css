@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f6fa;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.status {
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.focused {
+  background: #2ecc71;
+}
+
+.confused {
+  background: #f1c40f;
+  color: #000;
+}
+
+.proctor {
+  background: #e74c3c;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  background: #fff;
+}
